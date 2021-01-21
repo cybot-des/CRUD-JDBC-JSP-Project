@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BLUE LINES MENU</title>
+        <style>
+            body
+            {
+                
+                background-color:white;
+                align-content: center;
+                
+                               
+            }
+                    
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                }   
+
+            li {
+                float: left;
+                }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                }
+
+            li a:hover {
+                background-color: #111;
+                }
+            
+                
+            .container {
+            position: relative;
+            width: 50%;
+          }
+
+          .image {
+
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            
+          }
+
+          .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+          }
+
+          .container:hover .image {
+            opacity: 0.3;
+          }
+
+          .container:hover .middle {
+            opacity: 1;
+          }
+
+        .menu {
+          
+          color: white;
+          font-size: 16px;
+          
+        }
+        label
+        {
+          padding-left: 30px;
+          padding-bottom: 30px;
+          font-size: 55px;
+        }
+        #logo
+        {
+            padding-top: 40px;
+        }
+        
+        #map
+        {
+            position: absolute;
+            bottom: 52%;
+            left: 700px;
+        }
+        
+        #schedule
+        {
+            position:absolute;
+            left: 700px;
+            bottom:0.1%;
+            
+        }
+            
+        </style>
+    </head>
+    <body>
+        <form action="" method="post">
+            
+            <img src="logo2.png" id='log'>
+            <label>BLUE LINES</label>
+            <br/><br/>
+            
+             <ul>
+                 <li><a class="active" href="#home">Home</a></li>
+                 <li><a href="#news">&nbsp;</a></li>
+                 <li><a href="#contact">&nbsp;</a></li>
+                 <li><a href="#about">&nbsp;</a></li>
+  
+             </ul>
+                
+                
+                <div class="container">
+                    <div class="image" ><img src="menu-ship.jpg" alt="style"></div>
+                    <div class="middle">
+                        <div class="menu">
+                            
+                            <a href='crewSearch.html'><img src='people.png'><br/>Search Crew</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            
+                            <a href='http://localhost:8080/JavaProject/route.html' id='map'><img src='periscope.png'><br/>Our Routes</a> 
+                            <a href='http://localhost:8080/JavaProject/schedule.html' id='schedule'><img src='calendar.png'><br/>Search Schedule</a> 
+                            <br/><br/><br/>
+                            <a href='http://localhost:8080/JavaProject/office.html'><img src='skyscrapper.png'><br/>Our Offices</a>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            
+            
+        
+        
+        
+        </form>
+    </body>
+</html>

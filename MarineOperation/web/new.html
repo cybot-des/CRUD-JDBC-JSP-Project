@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>CREW SEARCH</title>
+        <style>
+        body
+            {
+                background-image:url("cargo-ship2.jpg");
+                background-repeat: no-repeat;
+            }
+            
+            
+            #user_img
+            {
+                padding-top: 50px;
+                border: 2px solid black;
+            }
+            
+            div.label_comp
+            {
+                text-align: left;
+                padding-left: 100px;
+                padding-bottom: 70px;
+            }
+            
+            
+            
+            #lab1
+            {
+              font-size: 50px;
+              font-style: normal;
+              text-align: left;
+              padding-bottom: 20px;
+            }               
+                        
+            form input
+            {
+                height: 50px;
+                width: 300px;
+                font-size: 35px;
+                text-align: center;
+                border:3px solid beige;
+                font-style: inherit;
+                color: #000000;
+                border-radius: 8px;
+            }
+            
+            
+            div.trans
+            {
+                width: 700px;
+                height: 720px;
+                position: absolute;
+                top: 100px;
+                left: 590px;
+                background-color:#000000;
+                border: 1px solid black;
+                opacity:0.6;
+                filter:alpha(opacity=60);
+                text-align: center;
+            }
+            
+            #sub,#sub2
+            {
+                height: 50px;
+                width: 150px;
+                background-color:white;
+                border-radius:15px;
+                font-size: 30px;
+                border:2px solid black;
+                border-color: black;
+            }
+            #logo
+            {
+                padding-top: 20px;
+            }
+            td
+            {
+                font-size: 22px;
+            }
+            table
+            {
+                border: 2px solid black;
+                text-align: center;
+                background-color: yellow;
+                opacity:0.8;
+                filter:alpha(opacity=80);
+            }
+            form
+            {
+                align-items: center;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <img src="logo2.png" alt="logo" id="logo">
+        
+        <label id="lab1">BLUE LINES</label>
+       
+        <br/><br/>
+        <form action="newUser" method="post">
+        
+            <br/><br/><br/><br/><br/><br/><br/>
+            <table border="5px" cellspacing="2px" cellpadding="7px">
+                <tr>
+                    <td>
+                        Crew_Id
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_id" >
+                    </td>
+                    <td>
+                        NAME 
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_name" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Designation
+                    </td>
+                    <td>
+                        <input  placeholder="Userid" name="c_des" >
+                    </td>
+                    
+                    <td>
+                        Nationality
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_nation" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_addr" >
+                    </td>
+                    <td>
+                        Contact
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_con" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Salary_Id
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_salId" >
+                    </td>
+                    <td>
+                        Salary
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_sal" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Duty Period
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_period" >
+                    </td>
+                    <td>
+                        Current Duty Location 
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_pdutyloc" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Route Id
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="route_id" >
+                    </td>
+                    <td>
+                        Vessel Id
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="vessel_id" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Future Duty Location
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_ndutyloc" >
+                    </td>
+                    <td>
+                        Current Duty Period
+                        
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_pdur" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Future Duty Period
+                    </td>
+                    <td>
+                        <input   placeholder="Userid" name="c_ndur" >
+                    </td>
+                    <td>
+                        <input type="reset" id="sub2" name="reset">
+                    </td>
+                    <td>
+                        <input type="submit" id="sub" name="create" value="Create">
+                    </td>
+                </tr>
+                
+            </table>
+            
+            
+            
+        
+        
+            
+        
+        
+        
+        
+        </form>
+    </body>
+</html>
+
+
+
+
+
+query="select * from emp where empid='" +eno +"'";
